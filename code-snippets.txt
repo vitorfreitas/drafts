@@ -1,0 +1,23 @@
+What do you know about code snippets?
+
+Snippets are a awesome tool that most editors have. With this feature you can
+magically write a great amount of boilerplate code with a small set of
+characters.
+
+Eg: "log" to write console.log(), "warn" to write console.warn(), and more
+complex ones such as creating the whole boilerplate of a React component with
+"rcomp".
+
+Here are some snippets of my own:
+https://github.com/vitorfreitas/dotfiles/blob/master/nvim/UltiSnips/typescript.snippets.
+
+As the book "The pragmatic programmer" says: "Tools amplify your talent. The
+better your tools, and the better you know how to use them, the more productive
+you can be.". I personally think that we as programmers MUST use the better
+tools for our job, and know how to use those tools well, and code snippets is
+one of those tools that can make you more productive, so as your code editor and
+so on.
+
+I use Vim for code editting and it has a great plugin for write your own
+snippets called UltiSnips (https://github.com/SirVer/ultisnips), but for sure
+you code editor will have plugins or native support for this feature.
