@@ -1,0 +1,29 @@
+Do you know the `Intl` object in Javascript?
+
+This namespace stands for the ECMAScript's internationalization API, and
+provides some nice features such as string comparison, and number, date and time
+formatting. With this post I'll show about currency formatting using the
+`NumberFormat` constructor.
+
+Recently I had to format integers to a currency format and I had 2 options:
+- Do it myself (which I'm a huge fan of)
+- Use some external library
+
+But this time was different, and I took some time to search about the topic and
+then I found `Intl.NumberFormat`. It's usage is simple, here's an example:
+
+```js
+const reaisFormatter = new Intl.NumberFormat('pt-BR', {
+  style: 'currency',
+  currency: 'BRL'
+})
+
+reaisFormatter.format(123.50) // R$ 123,50
+```
+
+And that was it. Simple, huh? And within the `NumberFormat` constructor you have
+an infinity of possibilities, such as unit formatting (liters, centimeters,
+foot...), percentage, decimal formatting and so on.
+
+Perheps you don't need to `npm install` something to do that anymore. Hope you
+enjoyed it!
